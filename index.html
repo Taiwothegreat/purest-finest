@@ -55,8 +55,8 @@
         text-align: right;
     }
     .footer-bottom {
-        border-top: 1px solid white; /* White divider */
-        padding-top: 10px;
+        border-bottom: 1px solid white; /* White divider */
+        padding-top: 3px;
         text-align: center;
     }
     ul{
@@ -68,24 +68,42 @@
     li a{
         color: #ffffff;
     }
-    .fl{
+    /*.fl{
     /*    float: left;*/
        /* display: inline;*/
-    }
+    /*}*/
     @media(max-width:768px){
-        .container{
+       /* .container{
             margin: 0;
             padding: 0;
             border-radius: border-box;
             margin-left: 50px;
+        }*/
+        .container {
+          max-width: 100%;
+          margin: 0 auto;
+          text-align: center;
         }
-        body{
+        
+        /*body{
             margin: 0;
             padding: 0;
             border-radius: border-box;
             overflow-x: hidden;
             overflow-y: auto;
+        }*/
+        html, body {
+          overflow-x: hidden;
+          width: 100%;
+          margin: 0;
+          padding: 0;
         }
+        
+        *{
+          margin: 0;
+          padding: 0;
+          border-radius: border-box;
+      }
     }
 
    </style>
@@ -105,17 +123,17 @@
                 <a class="navbar-brand" href="#">
                     <img src="./Vite + React-mobile_files/PFI_LOGO_SPIN_PNG-removebg-preview.png" alt="Logo">
                 </a>
-                <img src="/Assets/blog4.png" alt="" width="100px">
+                <img src="/Assets/blog4.png" alt="" width="200px">
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
+                    <li class="active"><a href="#">Our Company</a></li>
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Brands<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Page 1-1</a></li>
-                            <li><a href="#">Page 1-2</a></li>
-                            <li><a href="#">Page 1-3</a></li>
+                            <li><a href="#">Hydration & Vitality</a></li>
+                            <li><a href="#">Juice & Diary</a></li>
+                            <li><a href="#">Snacks</a></li>
                         </ul>
                     </li>
                     <li><a href="#">Social</a></li>
@@ -145,6 +163,7 @@
           <div class="thumbnail">
             <a href="#" target="_blank">
               <img src="./Assets/BlogImage 3.png" alt="Lights" style="width:300%" class="img-rounded">
+              <img src="/Vite + React-mobile_files/newsLogo 6.png" alt="" style="position: absolute;top:70px;background-color:#ffffff; width:50%;border-top-right-radius:10px;border-bottom-right-radius:10px;">
               <div class="caption">
                 <p>PureFinest set to expand into Africa’s functional beverage market</p>
               </div>
@@ -155,6 +174,7 @@
           <div class="thumbnail">
             <a href="#" target="_blank">
               <img src="./Assets/Blog 1.jpg" alt="Nature" style="width:100%" class="img-rounded">
+              <img src="/Vite + React-mobile_files/newsLogo 2.png" alt="" style="position: absolute;top:70px;background-color:#ffffff; width:50%;border-top-right-radius:10px;border-bottom-right-radius:10px;">
               <div class="caption">
                 <p>PureFinest Inc. is Preparing to Launch a New Line of Beverages</p>
               </div>
@@ -165,6 +185,7 @@
           <div class="thumbnail">
             <a href="#" target="_blank">
               <img src="/Assets/Blog 2.jpg" alt="Fjords" style="width:100%" class="img-rounded">
+              <img src="/Vite + React-mobile_files/newsLogo 1.png" alt="" style="position: absolute;top:70px;background-color:#ffffff; width:50%;border-top-right-radius:10px;border-bottom-right-radius:10px;">
               <div class="caption">
                 <p>PureFinest® Set to Launch Organic Vitamin, Sports, and Vitality Beverages Across Africa</p>
               </div>
@@ -182,6 +203,7 @@
           <div class="thumbnail">
             <a href="#" target="_blank">
               <img src="/Assets/BlogImage 2 (1).png" alt="Lights" style="width:250%">
+              <img src="/Vite + React-mobile_files/newsLogo 5.png" alt="" style="position: absolute;top:70px;background-color:#ffffff; width:50%;border-top-right-radius:10px;border-bottom-right-radius:10px;">
               <div class="caption">
                 <p>PureFinest set to expand into Africa’s functional beverage market</p>
               </div>
@@ -192,6 +214,7 @@
           <div class="thumbnail">
             <a href="#" target="_blank">
               <img src="/Assets/BlogImage 3.png" alt="Nature" style="width:100%" class="img-rounded">
+              <img src="/Vite + React-mobile_files/newsLogo 3.png" alt="" style="position: absolute;top:70px;background-color:#ffffff; width:50%;border-top-right-radius:10px;border-bottom-right-radius:10px;">
               <div class="caption">
                 <p>PureFinest Inc. is Preparing to Launch a New Line of Beverages</p>
               </div>
@@ -202,6 +225,7 @@
           <div class="thumbnail">
             <a href="#" target="_blank">
               <img src="/Assets/BlogImage 2.png" alt="Fjords" style="width:100%" class="img-rounded">
+              <img src="/Vite + React-mobile_files/newsLogo 4.png" alt="" style="position: absolute;top:70px;background-color:#ffffff; width:50%;border-top-right-radius:10px;border-bottom-right-radius:10px;">
               <div class="caption">
                 <p>PureFinest® Set to Launch Organic Vitamin, Sports, and Vitality Beverages Across Africa</p>
               </div>
@@ -217,13 +241,13 @@
         <div class="row">
             <!-- Logo on the Left -->
             <div class="col-md-6 footer-logo">
-                <img src="./Vite + React-mobile_files/PFI_LOGO_SPIN_PNG-removebg-preview.png" alt="Logo">
-                <img src="/Assets/blog4.png" alt="" width="100px">
+               <!---- <img src="./Vite + React-mobile_files/PFI_LOGO_SPIN_PNG-removebg-preview.png" alt="Logo">-->
+                <img src="/Vite + React-mobile_files/NewHeader1-removebg-preview.png" alt="" width="150px" style="color: #ffffff;">
             </div>
 
             <!-- Select Dropdown on the Right -->
             <div class="col-md-6 footer-select">
-                <select class="form-control">
+                <select class="form-control" style="width: 200px; background-color:#29226b;color:#ffffff">
                     <option value="en">English</option>
                     <option value="fr">French</option>
                     <option value="es">Spanish</option>
@@ -240,9 +264,9 @@
                 </select>
             </div>
         </div>
-        <div class="row">
+        <div class="row  footer-ul">
             <!-- Useful Links on the Left -->
-            <div class="col-md-6 footer-ul">
+            <div class="col-md-6 ">
             <ul>
                 <h3>Useful Links</h3>
                 <li><a href="#">Sustainability</a></li>
@@ -253,7 +277,7 @@
             </div>
 
             <!-- Information on the Right -->
-            <div class="col-md-6 footer-ul">
+            <div class="col-md-6">
                     <ul >
                         <h3>Information</h3>
                         <li><a href="#">Sustainability</a></li>
