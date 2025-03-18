@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <style>
+    body{
+        margin: 0;
+        padding: 0;
+        border-radius: border-box;
+        overflow-x: hidden;
+    }
+   /* div h3 p{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-stretch: expanded;
+        font-size: 30px;
+        font-weight: 600;
+    }*/
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    .navbar-brand img {
+        height: 50px;
+        width: 50px;
+        animation: spin 3s linear infinite; /* Spins every 3 seconds infinitely */
+    }
+    .footer {
+        background-color: #28a745; /* Green background */
+        color: white;
+        padding: 20px 0;
+        margin-top: 100px;
+        position: relative;
+        bottom: 0;
+    }
+    .footer-ul{
+        border-top: 1px solid white; /* White divider */
+        width: 100%;
+    }
+    .footer-logo img {
+       
+        height: 50px; /* Adjust logo size */
+    }
+    .footer-select {
+        text-align: right;
+    }
+    .footer-bottom {
+        border-top: 1px solid white; /* White divider */
+        padding-top: 10px;
+        text-align: center;
+    }
+    ul{
+        list-style: none;
+    }
+    li a{
+        text-decoration: none;
+    }
+    li a{
+        color: #ffffff;
+    }
+    .fl{
+    /*    float: left;*/
+       /* display: inline;*/
+    }
+    @media(max-width:768px){
+        .container{
+            margin: 0;
+            padding: 0;
+            border-radius: border-box;
+            margin-left: 50px;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            border-radius: border-box;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+    }
+
+   </style>
+</head>
+<body>
+<div class="container-fluid" style="margin-left: 0;">
+    
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="./Vite + React-mobile_files/PFI_LOGO_SPIN_PNG-removebg-preview.png" alt="Logo">
+                </a>
+                <img src="/Assets/blog4.png" alt="" width="100px">
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Brands<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Page 1-1</a></li>
+                            <li><a href="#">Page 1-2</a></li>
+                            <li><a href="#">Page 1-3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Social</a></li>
+                    <li><a href="#">Media Center</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+      <video src="./Assets/HomeBanner.mp4" width="100%" autoplay></video>
+    </div>
+    <!-----Grid System-->
+    <div class="container-fluid">
+      
+      <div class="row">
+        <div class="col-sm-6"><h3 style="font-weight: 900;">A CUT ABOVE THE REST</h3>
+          <p style="font-family:'Courier New', Courier, monospace;word-spacing:10px;font-size:20px;">At Pure Finest Inc., caring for life is at the core of everything we do. We believe in creating food and drinks that nourish the Body, Mind, and spirit and inspire a healthier, more sustainable future. By refusing to cut corners, we ensure that every product is crafted with the finest premium ingredients, upholding our commitment to quality and well-being. From our sourcing practices to the final product, we prioritize excellence to deliver brands that truly make a difference in every sip and bite.</p></div>
+        <div class="col-sm-6" style="background-color:lavenderblush;"><img src="./Assets/pure-finest.jpg" alt="" width="700px" height="400px" class="img-rounded"></div>
+      </div>
+    </div>
+  <!-------Bootstrap Media-->
+    <div class="container" style="position: relative; top:100px;">
+     
+      <div class="row">
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <a href="#" target="_blank">
+              <img src="./Assets/BlogImage 3.png" alt="Lights" style="width:300%" class="img-rounded">
+              <div class="caption">
+                <p>PureFinest set to expand into Africa’s functional beverage market</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <a href="#" target="_blank">
+              <img src="./Assets/Blog 1.jpg" alt="Nature" style="width:100%" class="img-rounded">
+              <div class="caption">
+                <p>PureFinest Inc. is Preparing to Launch a New Line of Beverages</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <a href="#" target="_blank">
+              <img src="/Assets/Blog 2.jpg" alt="Fjords" style="width:100%" class="img-rounded">
+              <div class="caption">
+                <p>PureFinest® Set to Launch Organic Vitamin, Sports, and Vitality Beverages Across Africa</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  <!------Start of second Image-->
+    <div class="container" style="position: relative;top: 100px;">
+     
+      <div class="row">
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <a href="#" target="_blank">
+              <img src="/Assets/BlogImage 2 (1).png" alt="Lights" style="width:250%">
+              <div class="caption">
+                <p>PureFinest set to expand into Africa’s functional beverage market</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <a href="#" target="_blank">
+              <img src="/Assets/BlogImage 3.png" alt="Nature" style="width:100%" class="img-rounded">
+              <div class="caption">
+                <p>PureFinest Inc. is Preparing to Launch a New Line of Beverages</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <a href="#" target="_blank">
+              <img src="/Assets/BlogImage 2.png" alt="Fjords" style="width:100%" class="img-rounded">
+              <div class="caption">
+                <p>PureFinest® Set to Launch Organic Vitamin, Sports, and Vitality Beverages Across Africa</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<!----Footer-->
+<footer class="footer" style="position: relative; bottom:0;">
+    <div class="container">
+        <div class="row">
+            <!-- Logo on the Left -->
+            <div class="col-md-6 footer-logo">
+                <img src="./Vite + React-mobile_files/PFI_LOGO_SPIN_PNG-removebg-preview.png" alt="Logo">
+                <img src="/Assets/blog4.png" alt="" width="100px">
+            </div>
+
+            <!-- Select Dropdown on the Right -->
+            <div class="col-md-6 footer-select">
+                <select class="form-control">
+                    <option value="en">English</option>
+                    <option value="fr">French</option>
+                    <option value="es">Spanish</option>
+                    <option value="dt">Dutch</option>
+                    <option value="es">Spanish</option>
+                    <option value="ar">Arabic</option>
+                    <option value="ch">Chinese</option>
+                    <option value="pt">Portuguese</option>
+                    <option value="rs">Russian</option>
+                    <option value="tr">Turkish</option>
+                    <option value="yr">Yoruba</option>
+                    <option value="ig">Igbo</option>
+                    <option value="ha">Hausa</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Useful Links on the Left -->
+            <div class="col-md-6 footer-ul">
+            <ul>
+                <h3>Useful Links</h3>
+                <li><a href="#">Sustainability</a></li>
+                <li><a href="#">Responsibility</a></li>
+                <li><a href="#">Terms of use</a></li>
+                <li><a href="#">Brands Protection</a></li>
+            </ul>
+            </div>
+
+            <!-- Information on the Right -->
+            <div class="col-md-6 footer-ul">
+                    <ul >
+                        <h3>Information</h3>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Responsibility</a></li>
+                        <li><a href="#">Terms of use</a></li>
+                        <li><a href="#">Brands Protection</a></li>
+                    </ul>
+            </div>
+        </div>
+
+        <!-- White Divider and Copyright Text -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 Your Company. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
